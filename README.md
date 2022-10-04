@@ -8,7 +8,7 @@ It uses internal APIs, so use at your own risk for now.
 interface GitHub
 {
     /** @return Call<GitHubUser> */
-    #[GET('/users{/user}')]
+    #[GET('/users/{user}')]
     public function getUser(string $user): Call;
 }
 

@@ -16,7 +16,7 @@ require __DIR__ . '/../vendor/autoload.php';
 interface GitHub
 {
     /** @return Call<GitHubUser> */
-    #[GET('/users{/user}')]
+    #[GET('/users/{user}')]
     public function getUser(string $user): Call;
 }
 
